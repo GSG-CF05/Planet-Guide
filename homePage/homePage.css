@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/Home\ &\ info\ background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Readex Pro", sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+}
+.homeTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 20px;
+
+}
+    /* style the font of the header */
+header{ 
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.planet{
+    display: flex;
+    width: 325px;
+    height: 146px;
+    background: rgba(21, 21, 21, 0.85);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.planetImg{
+    width: 121px;
+    height: 121px;
+    margin-top: 10px;
+    margin-left: 5px;
+ }
+ .saturnImg{
+    /* width: 121px; */
+    height: 68px;
+    margin-top: 10px;
+    margin-left: 5px;
+ }
+ .planetInfo{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     margin-left: 3px;
+     height: 100%;
+ }
+.description{
+    font-weight: 200;
+    font-size: .7rem;
+    line-height: 1.2rem;
+}
+.info{
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+.leftArraw{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
