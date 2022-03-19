@@ -1,6 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600;700&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap%27');
-
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +12,6 @@ body{
     color: #FFFFFF;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
-
 }
 .homeTitle{
     display: flex;
@@ -22,7 +19,6 @@ body{
     justify-content: space-between;
     align-items: left;
     margin-left: 20px;
-
 }
     /* style the font of the header */
 header{ 
@@ -88,10 +84,7 @@ span{
     margin-top: 50px;
     margin-bottom: 10px;
 }
-/* .title{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem
-} */
+
 
 /* responsive design*/
 @media (min-width: 900px){
