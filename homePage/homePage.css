@@ -7,7 +7,9 @@
 body{
     background-image: url(Home\ &\ info\ background.png);
     background-attachment: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Readex Pro", sans-serif;
     color: #FFFFFF;
     font-style: normal;
