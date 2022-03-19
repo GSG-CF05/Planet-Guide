@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap%27');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,8 @@ body{
     font-family: "Readex Pro", sans-serif;
     color: #FFFFFF;
     font-style: normal;
+    font-family: 'Poppins', sans-serif;
+
 }
 .homeTitle{
     display: flex;
@@ -32,6 +36,7 @@ span{
     line-height: 22px;
     padding-top: 20px;
 }
+/* make container flex */
 .container{
     display: flex;
     flex-direction: column;
@@ -39,6 +44,7 @@ span{
     margin-left: 20px;
     margin-top: 20px;
 }
+/* style the planet image and its information*/
 .planet{
     display: flex;
     width: 325px;
@@ -82,3 +88,7 @@ span{
     margin-top: 50px;
     margin-bottom: 10px;
 }
+/* .title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem
+} */
