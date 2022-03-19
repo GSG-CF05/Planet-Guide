@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(assets/Home\ &\ info\ background.png);
+    background-image: url(Home\ &\ info\ background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: "Readex Pro", sans-serif;
@@ -92,3 +92,38 @@ span{
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem
 } */
+
+/* responsive design*/
+@media (min-width: 900px){
+    body{
+      background-image: url(Desktop\ Home\ &\ info\ background.png);
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 2vw;
+  }
+  .planet{
+    width: 30vw;
+    height: 146px;
+    margin: 0 2vw 2vh 0px;
+  }
+  html{
+    font-size: 21px;
+  }
+  .homeTitle{
+      margin-left: 2vw;
+  }
+  .leftArraw{
+      margin-left:2vw; 
+  }
+  /* small transition on hover*/
+.planet:hover {
+    transform: translate3D(0, -4px, 0);
+  }
+}
