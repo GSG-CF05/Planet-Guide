@@ -1,20 +1,17 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600;700&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap%27');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-image: url(assets/Home\ &\ info\ background.png);
+    background-image: url(Home\ &\ info\ background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: "Readex Pro", sans-serif;
     color: #FFFFFF;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
-
 }
 .homeTitle{
     display: flex;
@@ -22,7 +19,6 @@ body{
     justify-content: space-between;
     align-items: left;
     margin-left: 20px;
-
 }
     /* style the font of the header */
 header{ 
@@ -88,7 +84,39 @@ span{
     margin-top: 50px;
     margin-bottom: 10px;
 }
-/* .title{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem
-} */
+
+
+/* responsive design*/
+@media (min-width: 900px){
+    body{
+      background-image: url(Desktop\ Home\ &\ info\ background.png);
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 2vw;
+  }
+  .planet{
+    width: 30vw;
+    height: 146px;
+    margin: 0 2vw 2vh 0px;
+  }
+  html{
+    font-size: 21px;
+  }
+  .homeTitle{
+      margin-left: 2vw;
+  }
+  .leftArraw{
+      margin-left:2vw; 
+  }
+  /* small transition on hover*/
+.planet:hover {
+    transform: translate3D(0, -4px, 0);
+  }
+}
