@@ -42,3 +42,69 @@ function planetFinder(result, planetN){
     }
     return solution;
 }
+
+ //building the html of the info portion of the page
+
+ let infoDiv=document.createElement('div');
+ infoDiv.classList+='planetInfoDiv';
+ document.querySelector('.div1').appendChild(infoDiv);
+
+ let planetProperties=document.createElement('div');
+ planetProperties.classList+='planetProperties';
+ infoDiv.appendChild(planetProperties);
+
+ let infoResults=document.createElement('div');
+ infoResults.classList+='results';
+ infoDiv.appendChild(infoResults);
+
+ //moon number
+ let moonNumE=document.createElement('p');
+ moonNumE.classList+='planetInfoEle';
+ moonNumE.innerText=moonNum;
+ infoResults.appendChild(moonNumE);
+
+ let moonNumE1=document.createElement('p');
+ moonNumE1.classList+='planetInfoEle';
+ moonNumE1.innerText='Moons No.:';
+ planetProperties.appendChild(moonNumE1);
+ //gravity
+ let gravityE=document.createElement('p');
+ gravityE.classList+='planetInfoEle';
+ gravityE.innerText=gravity;
+ infoResults.appendChild(gravityE);
+
+ let gravityE1=document.createElement('p');
+ gravityE1.classList+='planetInfoEle';
+ gravityE1.innerText='Gravity:';
+ planetProperties.appendChild(gravityE1);
+
+  //mass
+  let massE=document.createElement('p');
+  massE.classList+='planetInfoEle';
+  massE.innerText=mass;
+  infoResults.appendChild(massE);
+
+  let massE1=document.createElement('p');
+  massE1.classList+='planetInfoEle';
+  massE1.innerText='Mass:';
+  planetProperties.appendChild(massE1);
+  //radius
+  let radiusE=document.createElement('p');
+  radiusE.classList+='planetInfoEle';
+  radiusE.innerText=radius;
+  infoResults.appendChild(radiusE);
+
+  let radiusE1=document.createElement('p');
+  radiusE1.classList+='planetInfoEle';
+  radiusE1.innerText='Radius:';
+  planetProperties.appendChild(radiusE1);
+  //average Temprature
+  let avgTempE=document.createElement('p');
+  avgTempE.classList+='planetInfoEle';
+  avgTempE.innerText=avgTemp;
+  infoResults.appendChild(avgTempE);
+
+  let avgTempE1=document.createElement('p');
+  avgTempE1.classList+='planetInfoEle';
+  avgTempE1.innerText='Avg. Temp.:';
+  planetProperties.appendChild(avgTempE1);
