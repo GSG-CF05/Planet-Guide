@@ -4,56 +4,92 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(../assets/about\ backround.png);
+
+/* 2. background */
+body {
+    margin:0;
+    background-image: url(/assets/about\ backround.png);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #FFFFFF;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
-}
-.arrowImg{
-    display: flex;
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
+  }
+  /*3. back icon*/
+  .arrowImg{
+      display: flex;
+      margin-left: 20px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+  }
+/*4. Text Content*/
 .divContent{
-    width: 334px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    margin-top: 70px;
-    margin-right: 20px;
     text-align: center;
+    margin: 1rem;
 }
 h1{
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 13px;
+    color: #FFFFFF;
     }
 .para{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+
+} 
+/* ---------Desktop------ */
+@media screen and
+(min-width: 1024px) {
+  body{
+    background-image: url('/assets/Desktop_Background_1_1_1.png');
+    flex-direction: row;
+    display: flex;
+  }
+ 
+  h1{
+    font-size: 50px;
+  }
+  .para{
+    width: 400px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 2rem;
+    line-height: normal;
+  }
+  .divContent{
+    margin-left: 10rem;
+    margin-top: 18%;
+  }
+ 
 }
 
-/* responsive design*/
-@media (min-width: 900px){
-
-    body{
-        background-image: url(../assets/Desktop\ Background\ landing\ 1.png);
-    }
-    .divContent{
-        margin-left: 35%;
-        margin-right: 30%;
-        margin-top: 50px ;
-        width:35%;
-        text-align: center;
-        align-items: center;
-    }
- }
+/* ---------Tablet------ */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  body{
+    background-image: url('/assets/Desktop_Background_1_1_1.png');
+    flex-direction: column;
+  }
+  
+  h1{
+    font-size: 35px;
+  }
+  .para{
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .divContent{
+    margin-top: -1.5rem;
+  }
+}
