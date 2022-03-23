@@ -27,23 +27,7 @@ fetch('https://api.le-systeme-solaire.net/rest/bodies/')
     let radius=planet.meanRadius +'Km'
     let avgTemp=planet.avgTemp+' K';
 
-   
-})
-// finds the planet from the api data
-function planetFinder(result, planetN){
-    let lengthh=287;
-    let solution;
-    for(let i=0;i<lengthh;i++)
-    {
-        if(result.bodies[i].isPlanet== true && result.bodies[i].englishName==planetN){
-            solution=i;
-            break;
-        }
-    }
-    return solution;
-}
-
- //building the html of the info portion of the page
+     //building the html of the info portion of the page
 
  let infoDiv=document.createElement('div');
  infoDiv.classList+='planetInfoDiv';
@@ -108,6 +92,23 @@ function planetFinder(result, planetN){
   avgTempE1.classList+='planetInfoEle';
   avgTempE1.innerText='Avg. Temp.:';
   planetProperties.appendChild(avgTempE1);
+   
+})
+// finds the planet from the api data
+function planetFinder(result, planetN){
+    let lengthh=287;
+    let solution;
+    for(let i=0;i<lengthh;i++)
+    {
+        if(result.bodies[i].isPlanet== true && result.bodies[i].englishName==planetN){
+            solution=i;
+            break;
+        }
+    }
+    return solution;
+}
+
+
 
   //fetching a related article
 fetch("https://free-news.p.rapidapi.com/v1/search?q="+planetName+"%20planet&lang=en", {
