@@ -47,6 +47,117 @@ h1{
     margin-bottom: 2rem;
 
 } 
+/*5. slider style*/
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  border-radius: 25px 25px 0px 0px;
+}
+/*github icon*/
+.fa-brands{
+  color: black;
+}
+
+/* Slideshow container */
+.slideShowContainer {
+  width: 75%;
+  position: relative;
+  margin: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 3px rgba(255, 255, 255, 0.5);
+  border-radius: 25px 25px 25px 25px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+.text {
+  
+  background: #FFFFFF;
+  padding-left : 1rem;
+  border-radius: 0px 0px 20px 20px;
+  height: auto ;
+}
+.job{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fa-brands{
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+/* Number text (1/5 etc) */
+.numberText {
+  color: #535050;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #ffffff7e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 /* ---------Desktop------ */
 @media screen and
 (min-width: 1024px) {
@@ -55,12 +166,19 @@ h1{
     flex-direction: row;
     display: flex;
   }
- 
+  .slideShowContainer{
+    width: 30%;
+    margin-top: 10vh;
+  }
+  .dot{
+    display: flex;
+    flex-direction: column;
+  } 
   h1{
     font-size: 50px;
   }
   .para{
-    width: 400px;
+    width: 500px;
     font-size: 22px;
     font-weight: 400;
     margin-top: 2rem;
@@ -68,9 +186,18 @@ h1{
   }
   .divContent{
     margin-left: 10rem;
-    margin-top: 18%;
+    margin-top: 10%;
   }
- 
+  .dot{
+    margin-top: .5rem;
+  }
+  .dots{
+    margin-top: 5rem;
+    margin-left: 20px;
+  }
+  .text{
+    font-size: 22px;
+  } 
 }
 
 /* ---------Tablet------ */
@@ -79,13 +206,16 @@ h1{
     background-image: url('/assets/Desktop_Background_1_1_1.png');
     flex-direction: column;
   }
-  
+  .slideShowContainer{
+    width: 35%;
+    margin-top: 5vh;
+  } 
   h1{
     font-size: 35px;
   }
   .para{
     width: 500px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
   }
