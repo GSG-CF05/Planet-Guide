@@ -25,18 +25,22 @@
 /* 2. background */
 body {
     font-family          : 'Poppins', sans-serif;
-    background-image     : url('assets/Landing\ mobile\ background.png');
+    background-image: url(assets/Desktop\ Background\ landing\ 1.png);
+    background-position  : center left;
     background-attachment: fixed;
-    background-position  : center center;
     background-repeat    : no-repeat;
     background-size      : cover;
+    min-height:100vh;
+
+    
 }
 
 /* 3. Text style  */
 .contantContainer {
     display        : flex;
+    min-height:100vh;
     flex-direction : column;
-    justify-content: center;
+    justify-content: space-between;
     justify-items  : center;
     align-items    : center;
 }
@@ -69,7 +73,7 @@ body {
 /* 3-2 Buttons style  */
 
 .startBtn {
-    margin-top      : 45vh;
+    
     width           : 239px;
     height          : 64px;
     border          : none;
@@ -93,4 +97,35 @@ a {
     line-height: 24px;
     text-align : center;
     color      : #ffffff;
+}
+@media (min-width: 900px){
+    .contantContainer{
+        max-width: 35vw;
+        min-height: 55vh;
+        max-height: 55vh;
+        margin-right: 10vw;
+        display: flex;
+        flex-direction : column;
+        justify-content:space-between;
+    }
+    .mainText{
+        font-size: 2.7rem;
+        margin:0px}
+    .moreText{font-size: 1.2rem;}
+    body{
+        height:100vh;
+        display: flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .startBtn{
+        margin:0px;
+        font-size:1rem;
+        height: 3.5rem;
+        width:13rem;
+        margin-bottom:1rem;
+    }
+    .about{font-size: 0.9rem;}
+
 }
