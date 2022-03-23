@@ -108,3 +108,23 @@ function planetFinder(result, planetN){
   avgTempE1.classList+='planetInfoEle';
   avgTempE1.innerText='Avg. Temp.:';
   planetProperties.appendChild(avgTempE1);
+
+  //fetching a related article
+fetch("https://free-news.p.rapidapi.com/v1/search?q="+planetName+"%20planet&lang=en", {
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "free-news.p.rapidapi.com",
+        "x-rapidapi-key": "b58823edf5msh61f4aca11339981p12e19fjsn830412781857"
+    }
+})
+.then(response => {
+    return response.json();
+})
+.then(results =>{
+    let length=results.articles.length;
+    let randomIndex=Math.floor(10*Math.random());
+    let article=results.articles[randomIndex];
+    let articleTitle=article.title;
+    let articleSummary=article.summary;
+    let articleLink=article.link;
+    console.log(articleLink)})
