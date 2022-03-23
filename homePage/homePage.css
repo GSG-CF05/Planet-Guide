@@ -91,7 +91,7 @@ span{
 /* responsive design*/
 @media (min-width: 900px){
     body{
-      background-image: url(../assets/Desktop\ Home\ &\ info\ background.png);
+      background-image: url('../assets/Desktop\ Home\ &\ info\ background.png');
       background-attachment: fixed;
       background-position: center center;
       background-repeat: no-repeat;

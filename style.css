@@ -25,7 +25,7 @@
 /* 2. background */
 body {
     font-family          : 'Poppins', sans-serif;
-    background-image: url(assets/Desktop\ Background\ landing\ 1.png);
+    background-image: url('./assets/Desktop\ Background\ landing\ 1.png');
     background-position  : center left;
     background-attachment: fixed;
     background-repeat    : no-repeat;
@@ -90,6 +90,7 @@ a {
 }
 
 .about {
+    margin-bottom: 3rem;
     margin-top : 0.5rem;
     font-style : normal;
     font-weight: 400;
