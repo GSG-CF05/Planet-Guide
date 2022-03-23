@@ -128,4 +128,24 @@ fetch("https://free-news.p.rapidapi.com/v1/search?q="+planetName+"%20planet&lang
     let articleTitle=article.title;
     let articleSummary=article.summary;
     let articleLink=article.link;
-    console.log(articleLink)})
+    console.log(articleLink)
+
+//Building the article section html
+let articleDiv=document.createElement('div');
+articleDiv.classList+='articleDiv';
+articleDiv.addEventListener('click',()=>{location.replace(articleLink)})
+document.querySelector('.div2').appendChild(articleDiv);
+
+let articleTitleE=document.createElement('h2');
+articleTitleE.classList+='articleTitle';
+articleTitleE.innerText=articleTitle;
+articleDiv.appendChild(articleTitleE);
+
+let articleSummaryE=document.createElement('p');
+articleSummaryE.classList+='articleSummary';
+articleSummaryE.innerText=articleSummary;
+articleDiv.appendChild(articleSummaryE);
+
+
+
+})
