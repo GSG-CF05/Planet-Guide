@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap%27');
+html,body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+body{
+    background-image: url(../assets/planetPageBackgroundImg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.header h1{
+    text-align: center;
+    font-size:3rem;
+}
+.planetImg{
+    max-width: 335px;
+}
+.planetInfoDiv{
+    width:85vw;
+    padding: 1.6rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.3rem;
+    background-color:#181818d8
+}
+.planetInfoDiv div{
+    margin-right: 1rem;
+}
+.articleDiv{
+    color: black;
+    background-color: white;
+    width:85vw;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 18px;
+    max-height:15rem;
+    overflow-y: scroll;
+}
+.div2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.articleDiv::-webkit-scrollbar {
+    width: 3px;
+
+  }
+  
+  /* Track */
+  .articleDiv::-webkit-scrollbar-track {
+    background: #00000000;
+    height: 13rem;
+    
+  }
+  
+  /* Handle */
+  .articleDiv::-webkit-scrollbar-thumb {
+    background: #555;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    background-clip: padding-box;   
+    
+  }
+  
+  /* Handle on hover */
+  .articleDiv::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 56, 56);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    background-clip: padding-box;   
+  }
