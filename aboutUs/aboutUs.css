@@ -8,7 +8,7 @@
 /* 2. background */
 body {
     margin:0;
-    background-image: url(/assets/about\ backround.png);
+    background-image: url('../assets/about\ backround.png');
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
